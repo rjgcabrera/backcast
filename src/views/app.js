@@ -9,7 +9,7 @@ var AppView = Backbone.View.extend({
       console.log('asdf');
       this.render();
     });
-    this.videos.search('chris webby');
+    this.videos.search('grumpy cat');
 
     this.render();
   },
@@ -30,7 +30,8 @@ var AppView = Backbone.View.extend({
     }).render().$el;
 
     var searchBar = new SearchView({
-      el: $('.search')
+      el: $('.search'),
+      collection: this.videos,
     }).render().$el;
 
     //console.log('this.videos: ', this.videos);
