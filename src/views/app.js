@@ -26,7 +26,6 @@ var AppView = Backbone.View.extend({
     var videoPlayer = new VideoPlayerView({ // ask fred. collection is undefined w/ this.render() inside initialize
       el: $('.player'),
       collection: this.videos,
-      // model: this.videos.at(0)
     }).render().$el;
 
     var searchBar = new SearchView({
@@ -34,8 +33,6 @@ var AppView = Backbone.View.extend({
       collection: this.videos,
     }).render().$el;
 
-    //console.log('this.videos: ', this.videos);
-    
     return this;
   },
 

@@ -2,7 +2,7 @@ var SearchView = Backbone.View.extend({
 
   events: {
     'click button': 'handleSearch',
-    'keyup input' : 'keyPressEventHandler',
+    'keyup input': 'keyPressEventHandler',
   },
 
   render: function() {
@@ -15,7 +15,7 @@ var SearchView = Backbone.View.extend({
   },
 
   keyPressEventHandler: function(event) {
-    if(event.keyCode == 13){
+    if (event.keyCode === 13) {
       this.handleSearch();
     }
   },
