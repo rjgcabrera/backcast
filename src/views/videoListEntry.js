@@ -16,7 +16,7 @@ var VideoListEntryView = Backbone.View.extend({
 
   clickHandler: function() {
     this.model.select();
-    console.log('clicked!');
+    //console.log('clicked!');
   },
 
   template: templateURL('src/templates/videoListEntry.html')
